@@ -51,7 +51,7 @@ def compile_news():
   # Create a story for the content
   story = []
   
-  for no,paragraph in enumerate(data[0:10]):
+  for no,paragraph in enumerate(data[0:30]):
       if paragraph['image'] == "https:":
         pass
       else:
@@ -75,7 +75,7 @@ def compile_news():
       try:
         story.append(image)
       except LayoutError(ident):
-        pass
+        continue
       story.append(summary)
       story.append(p)
       story.append(NextPageTemplate('two_column'))
