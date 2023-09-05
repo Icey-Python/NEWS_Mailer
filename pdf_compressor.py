@@ -29,5 +29,4 @@ def compress_pdf(input_pdf, output_pdf):
 input_pdf = "multi_column_with_long_paragraphs.pdf"
 output_pdf = "multi_column_with_long_paragraphs.pdf"
 
-# Compress the PDF
-compress_pdf(input_pdf, output_pdf)
+
